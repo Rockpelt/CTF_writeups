@@ -35,6 +35,4 @@
 view source code and search for hsctf{
 
 Result: 
-![alt text][logo]
-
-[logo]:(./Result.PNG)
+![result](Result.PNG)
