@@ -45,11 +45,9 @@ after reading the source code, it is clear that our goal is to fulfill
 Notice that `==` is used instead of `===`
 
 > in php, `==` means equal after type juggling, while `===` means identical (in value and type)
->>for example:
-
->>var_dump("1" == "001"); // 1 == 1 -> true
-
->>var_dump("10" == "1e1"); // 10 == 10 -> true
+>for example:
+>var_dump("1" == "001"); // 1 == 1 -> true
+>var_dump("10" == "1e1"); // 10 == 10 -> true
 
 therefore the `==` here gives a way for me to abuse.
 
