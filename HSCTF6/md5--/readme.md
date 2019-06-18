@@ -44,10 +44,10 @@ after reading the source code, it is clear that our goal is to fulfill
 
 Notice that `==` is used instead of `===`
 
-> in php, `==` means equal after type juggling, while `===` means identical (in value and type)
->for example:
->var_dump("1" == "001"); // 1 == 1 -> true
->var_dump("10" == "1e1"); // 10 == 10 -> true
+> in php, `==` means equal after type juggling, while `===` means identical (in value and type)  
+>for example:  
+>var_dump("1" == "001"); *// 1 == 1 -> true*  
+>var_dump("10" == "1e1"); *// 10 == 10 -> true*  
 
 therefore the `==` here gives a way for me to abuse.
 
@@ -59,10 +59,10 @@ write a script [./find.py](./find.py)* and itearate to find the desire string a.
 [+] found! md4( 0e251288019 ) ---> 0e87495616364196127106940433240
 ```
 
-visit <font color="1E8449">https://md5--.web.chal.hsctf.com/?md4=0e251288019</font>
+visit **https://md5--.web.chal.hsctf.com/?md4=0e251288019**
 and get the flag : hsctf{php_type_juggling_is_fun}
 
 
-* : The script was modified from the script written by bl4de
+\* : The script was modified from the script written by bl4de
 
 
