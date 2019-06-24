@@ -37,18 +37,18 @@ Who knew the USPS could lose a letter so many times?<br>
 
 After reading the source code, we see there is a nice target runs system(/bin/sh)
 ```
-void win() {\
-	system("/bin/sh");\
+void win() {
+	system("/bin/sh");
 }
 ```
 
 And the vulnerable function 'gets' lies in vuln:
 ```
-void vuln() {\
-	char dest[8];\
-	printf("Where are you sending your mail to today? ");\
-	gets(dest);\
-	printf("Alright, to %s it goes!\n", dest);\
+void vuln() {
+	char dest[8];
+	printf("Where are you sending your mail to today? ");
+	gets(dest);
+	printf("Alright, to %s it goes!\n", dest);
 }
 ```
 
